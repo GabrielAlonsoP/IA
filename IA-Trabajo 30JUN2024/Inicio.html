@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="menu">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close-outline"></ion-icon>
+    </div>
+    <div class="menu-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon id= "cloud" name="home-outline"></ion-icon>
+                <span>Inicio</span> 
+            </div>
+            <button class="boton">
+                <ion-icon name="add-circle-outline"></ion-icon>
+                <span>Nueva Pregunta</span>
+            </button>
+        </div>
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a href="#">
+                        <ion-icon name="mail-unread-outline"></ion-icon>
+                        <span>Mail</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="reader-outline"></ion-icon>
+                        <span>Historial</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="outputContainer">
+        <h2>Respuesta de la IA:</h2>
+        <output type="text" id="respuesta"></output>
+        <p id="outputText"></p>
+    </div>
+    <div class="form-group">
+        <input type="text" id="mensaje" name="mensaje" placeholder="Envía un mensaje a Samanta ..." required>
+        <button id="submitButton">Enviar</button>
+    </div>
+    <video autoplay muted loop id="video-background">
+        <source src="videos/IA.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js" ></script>
+</body>
+</html>
